@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9C5DA228-E070-E231-0D92-CD9089139AA2}</ProjectGuid>
+    <ProjectGuid>{2F60A8D9-6F00-3D9F-DD72-F252D4585620}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Server.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\ShowHidenMenu.cs" />
+    <Compile Include="Assets\Scripts\SoundControl.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\WaterTile.cs" />
@@ -100,52 +101,52 @@
     <None Include="Assets\ScriptTemplates\50-Mirror__Network Manager-NewNetworkManager.cs.txt" />
     <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -325,28 +326,28 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower Defense 2D/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/joão/Desktop/Unity Projects/Tower-Defense-Multiplayer/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -696,35 +697,35 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Mirror.Weaver.csproj">
-      <Project>{4CAC377B-95D5-1EBB-A85C-8E6E078D73F4}</Project>
+      <Project>{957372EE-AAC8-32E9-8009-28351B6ACDE8}</Project>
       <Name>Mirror.Weaver</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.Authenticators.csproj">
-      <Project>{30A382D8-4206-95B2-6F4B-556C6A09248F}</Project>
+      <Project>{D6711A20-4D21-3282-56C6-FD91130480EC}</Project>
       <Name>Mirror.Authenticators</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.Components.csproj">
-      <Project>{5825492C-DDE5-89BA-0C95-4B245AC25BA9}</Project>
+      <Project>{6063CBFA-31D3-399B-6819-0256319E9979}</Project>
       <Name>Mirror.Components</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.Examples.csproj">
-      <Project>{1E874EB9-4066-8E01-1D5E-0A97A5DC4C3B}</Project>
+      <Project>{06764244-531B-B5CF-CBE7-8B8BD6E64911}</Project>
       <Name>Mirror.Examples</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{24F9CE00-76BD-29AE-9E1E-D67071209818}</Project>
+      <Project>{571B2F68-E077-958E-BAC3-A6619763D156}</Project>
       <Name>Mirror.CompilerSymbols</Name>
     </ProjectReference>
     <ProjectReference Include="Ninja.WebSockets.csproj">
-      <Project>{1A35827A-62C3-DFAA-A4DD-FDAEC2FCE2D2}</Project>
+      <Project>{051380B0-D07A-F9F2-052C-AFB946AD48AB}</Project>
       <Name>Ninja.WebSockets</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.csproj">
-      <Project>{9AC4904D-7D09-61E2-7F53-1A1687EBF296}</Project>
+      <Project>{9A2F95C4-062E-9D85-AD65-DD5371B61C8A}</Project>
       <Name>Mirror</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.Editor.csproj">
-      <Project>{B141FC9E-EC0D-4B7A-3046-E802A63BE7E6}</Project>
+      <Project>{F36A57B8-E122-3E0B-1493-6CA92A9ADF4D}</Project>
       <Name>Mirror.Editor</Name>
     </ProjectReference>
   </ItemGroup>

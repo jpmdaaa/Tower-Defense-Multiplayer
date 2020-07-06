@@ -12,9 +12,10 @@ public class ButtonsRoom : MonoBehaviour
     private Server serverTest;
     NetworkManager manager;
     NetworkConnection conn;
+    NetworkConnectionToClient conClient;
     public GameObject Waiting;
     public Text numberPlayer;
-
+    
     private Server servertest;
 
     private void Awake()
@@ -28,10 +29,23 @@ public class ButtonsRoom : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log("Numero de jogadores: " + manager.numPlayers);
 
-        numberPlayer.text = ("Numero de jogadores: " + manager.numPlayers);
+        // client ready
+        if (NetworkClient.isConnected && !ClientScene.ready)
+        {
+                ClientScene.Ready(NetworkClient.connection);
 
+                if (ClientScene.localPlayer == null)
+                {
+                    ClientScene.AddPlayer(NetworkClient.connection);
+                }
+            
+        }
+
+
+
+
+        //Debug.Log("Server active: " + NetworkServer.active);
         if (manager.numPlayers == 2)
         {
             GO_Game.SetActive(true);
@@ -57,37 +71,42 @@ public class ButtonsRoom : MonoBehaviour
         
             if (type == 1 )
             {
+
+                //inicia o host, client + servidor
                 manager.StartHost();
-             
+               
+                //ativa a interface do p1
                 serverTest.SetPlayer1();
-              
+                
+                //adiciona o jogador ao servidor
                 NetworkServer.AddPlayerForConnection(conn, serverTest.GetPlayer1());
-             
+            
+               //ativa mensagem de esperando outro jogar
                 Waiting.SetActive(true);
                
 
             }
 
 
-            if (type == 2 && NetworkServer.active)
+            if (type == 2)
             {
-                 
-                    manager.StartClient();
-                    
-                    serverTest.SetPlayer2();
-                    NetworkServer.AddPlayerForConnection(conn, serverTest.GetPlayer2());
-                    GO_Game.SetActive(true);
-                    GO_Room.SetActive(false);
+                //inicia o host, client 
+                manager.StartClient();
+                //ativa a interface do p1
+                serverTest.SetPlayer2();
+                //adiciona o jogador ao servidor
+                NetworkServer.AddPlayerForConnection(conn, serverTest.GetPlayer2());
+                Debug.Log(NetworkServer.active);
+
+                GO_Game.SetActive(true);
+                 GO_Room.SetActive(false);
 
                     
 
             }
+            manager.networkAddress = "LocalHost";
 
-            if (manager.numPlayers != 2)
-            {
-             
-             
-            }
+            
 
 
         }
@@ -95,8 +114,8 @@ public class ButtonsRoom : MonoBehaviour
         {
             // Connecting
             Debug.Log("Connecting to " + manager.networkAddress + "..");
-          
-                //manager.StopClient();
+
+            manager.StopClient();
             
         }
 

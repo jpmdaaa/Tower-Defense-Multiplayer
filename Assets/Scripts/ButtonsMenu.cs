@@ -22,17 +22,7 @@ public class ButtonsMenu : MonoBehaviour
 
     public void Playgame()
     {
-        /*ClientScene.Ready(NetworkClient.connection);
-
-
-      if (ClientScene.localPlayer == null)
-      {
-          ClientScene.AddPlayer(NetworkClient.connection);
-      }
-
-
-      network.StartClient();
-      network.networkAddress = "LocalHost";   */
+    
         GO_Menu.SetActive(false);
          GO_Room.SetActive(true);
             GO_Options.SetActive(false);

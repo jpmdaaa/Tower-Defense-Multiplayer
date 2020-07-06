@@ -15,6 +15,7 @@ public class BuyMonsters : MonoBehaviour
     {
         Player = (Player2Controller)FindObjectOfType(typeof(Player2Controller));
         manager = (NetworkManager)FindObjectOfType(typeof(NetworkManager));
+        
 
     }
 
